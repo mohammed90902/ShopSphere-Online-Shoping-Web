@@ -1,5 +1,6 @@
 class Cart {
   items = [];
+#localStorage;
 
   constructor(storageKey) {
     this.storageKey = storageKey;
