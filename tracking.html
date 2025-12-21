@@ -1,51 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Tracking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - Shop Sphere</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/shared/general.css">
-    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/pages/tracking.css">
-  </head>
-  <body>
-    <div class="amazon-header">
-      <div class="amazon-header-left-section">
-        <a href="amazon.html" class="header-link">
-          <img class="amazon-logo" src="images/amazon-logo-white.png">
-          <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png">
-        </a>
-      </div>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="amazon.html" class="logo">Shop Sphere</a>
+            <nav class="nav-links">
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="orders.html" class="nav-link"><span>My </span>Orders</a>
+                <a href="orders.html" class="nav-link cart-icon-wrapper">
+                    <span>Cart</span>
+                    <div class="cart-count">0</div>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-      <div class="amazon-header-middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="images/icons/search-icon.png">
-        </button>
-      </div>
-
-      <div class="amazon-header-right-section">
-        <a class="orders-link header-link" href="orders.html">
-          <span class="returns-text">Returns</span>
-          <span class="orders-text">& Orders</span>
-        </a>
-
-        <a class="cart-link header-link" href="checkout.html">
-          <img class="cart-icon" src="images/icons/cart-icon.png">
-          <div class="cart-quantity">0</div>
-          <div class="cart-text">Cart</div>
-        </a>
-      </div>
-    </div>
-
+    <!-- Main Content -->
     <div class="main">
-      <div class="order-tracking js-order-tracking">
-        <!-- Dynamic content will be injected here by tracking.js -->
-      </div>
+        <a href="orders.html" class="back-link">
+            <span>←</span>
+            <span>Back to Orders</span>
+        </a>
+
+        <div class="tracking-card">
+            <div class="order-tracking js-order-tracking">
+                <!-- Sample tracking content -->
+                <div class="delivery-date">Arriving Sunday, June 25</div>
+                
+                <div class="product-info">Black and Gray Athletic Cotton Socks - 6 Pairs</div>
+                <div class="product-info">Quantity: 1</div>
+                
+                <img class="product-image" src="https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=300&h=300&fit=crop" alt="Product">
+                
+                <div class="progress-labels">
+                    <div class="progress-label active">Preparing</div>
+                    <div class="progress-label active">Shipped</div>
+                    <div class="progress-label">Delivered</div>
+                </div>
+                
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 66%;"></div>
+                </div>
+
+                <div class="tracking-details">
+                    <div class="tracking-step">
+                        <div class="step-icon">✓</div>
+                        <div class="step-content">
+                            <h3>Order Confirmed</h3>
+                            <p>June 20, 2024 at 3:24 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="tracking-step">
+                        <div class="step-icon">✓</div>
+                        <div class="step-content">
+                            <h3>Shipped</h3>
+                            <p>June 22, 2024 at 9:15 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="tracking-step">
+                        <div class="step-icon">→</div>
+                        <div class="step-content">
+                            <h3>Out for Delivery</h3>
+                            <p>Expected: June 25, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- JavaScript -->
     <script type="module" src="scripts/tracking.js"></script>
-  </body>
+</body>
 </html>
