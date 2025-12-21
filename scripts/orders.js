@@ -32,7 +32,7 @@ function renderOrders() {
       <div class="empty-orders">
         You have no orders.
         <br><br>
-        <a href="amazon.html" class="link-primary">Continue shopping</a>
+        <a href="index.html" class="link-primary">Continue shopping</a>
       </div>
     `;
     return;

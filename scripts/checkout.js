@@ -39,7 +39,7 @@ function renderCart() {
       <div class="empty-cart">
         Your cart is empty.
         <br>
-        <a href="amazon.html" class="link-primary">Continue shopping</a>
+        <a href="index.html" class="link-primary">Continue shopping</a>
       </div>
     `;
     document.querySelector('.js-payment-summary').innerHTML = '';
